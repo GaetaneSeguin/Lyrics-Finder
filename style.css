@@ -116,11 +116,10 @@ h4 {
 
 .pochette {
     visibility: hidden;
-    background-color: whitesmoke;
     width: 45%;
     height: 40%;
     position: sticky;
-    top: 20px;
+    top: 70px;
 }
 
 .bigdiv {
@@ -131,7 +130,6 @@ h4 {
 }
 
 #photo {
-
     object-fit: cover;
     height: 100%;
     width: 100%;
@@ -170,5 +168,27 @@ h4 {
     position: fixed;
 }
 
+@media (max-width : 768px){
+    #cover{
+        display: none;
+    }
+
+    #Tracklist{
+        width: 80vw;
+    }
+
+    #btnsearch{
+        width: 30px;
+        height: 30px;
+    }
+    
+    #grpSearch #recherche{
+        width: 70%;
+    }
+
+    #imgLogo{
+        width: 100px;
+    }
+}
 
 

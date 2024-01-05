@@ -32,6 +32,13 @@ async function globalProg() {
         // donner un identifiant à la div
         div.id = "id" + i;
 
+        // Ajouter un eventListener à la div
+        div.addEventListener("mouseover", (e) =>{
+            document.getElementById("cover").style.visibility = "visible";
+            let image = document.getElementById("photo");
+            image.src = tabCoverUrl[i];
+        } )
+
         // créer un tableau qui stocke les url des pochettes de disque en fonction de la boucle i
         tabCoverUrl[i] = chansons.response.sections[0].hits[i].result.song_art_image_url;
 
@@ -50,56 +57,6 @@ async function globalProg() {
 
     document.getElementById("btnSuivant").style.visibility = "visible";
     document.getElementById("cover").style.visibility = "hidden";
-
-    //Gestion des pochettes
-    document.getElementById("Tracklist").addEventListener("mouseover", (e) => {
-        document.getElementById("cover").style.visibility = "visible";
-        let identifiant = e.target.id;
-        console.log(identifiant);
-        let image = document.getElementById("photo");
-        switch (identifiant) {
-            case "id0":
-                document.getElementById("cover").style.visibility = "visible";
-                image.src = tabCoverUrl[0];
-                break;
-            case "id1":
-                document.getElementById("cover").style.visibility = "visible";
-                image.src = tabCoverUrl[1];
-                break;
-            case "id2":
-                document.getElementById("cover").style.visibility = "visible";
-                image.src = tabCoverUrl[2];
-                break;
-            case "id3":
-                document.getElementById("cover").style.visibility = "visible";
-                image.src = tabCoverUrl[3];
-                break;
-            case "id4":
-                document.getElementById("cover").style.visibility = "visible";
-                image.src = tabCoverUrl[4];
-                break;
-            case "id5":
-                document.getElementById("cover").style.visibility = "visible";
-                image.src = tabCoverUrl[5];
-                break;
-            case "id6":
-                document.getElementById("cover").style.visibility = "visible";
-                image.src = tabCoverUrl[6];
-                break;
-            case "id7":
-                document.getElementById("cover").style.visibility = "visible";
-                image.src = tabCoverUrl[7];
-                break;
-            case "id8":
-                document.getElementById("cover").style.visibility = "visible";
-                image.src = tabCoverUrl[8];
-                break;
-            case "id9":
-                document.getElementById("cover").style.visibility = "visible";
-                image.src = tabCoverUrl[9];
-                break;
-        }
-    });
 }
 
 //Gestion page suivante
