@@ -1,5 +1,9 @@
-# projet-dataviz-api-les-lumieres-tamisees
+# Lyrics Finder
 
-Rechercher des paroles de musiques en fonction d'un mot ou d'une phrase
+Projet de groupe réalisé par 4 personnes en deux semaines au sein de Ada Tech School Nantes. Ce projet avait pour but de découvrir l'utilisation d'une API 
+
+Ce site permet de rechercher des paroles de musiques en fonction d'un mot ou d'une phrase, puis d'afficher les pochettes des albums correspondants
 
 API utilisée : https://genius.com/api/search/lyric?q="{mot-ou-phrase}"&&page={numéro-de-page}
+
+[Il est possible d'y accéder ici](https://marielelamer.github.io/Lyrics-Finder/)
