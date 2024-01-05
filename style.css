@@ -7,7 +7,7 @@
 }
 
 body {
-    background: url("/img/bg/israel-palacio-Y20JJ_ddy9M-unsplash-2.jpg") center center no-repeat fixed;
+    background: url("./img/bg/israel-palacio-Y20JJ_ddy9M-unsplash-2.jpg") center center no-repeat fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
