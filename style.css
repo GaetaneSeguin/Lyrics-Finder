@@ -1,0 +1,174 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url("/img/bg/israel-palacio-Y20JJ_ddy9M-unsplash-2.jpg") center center no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#imgLogo {
+    width: 15%;
+    height: 15%;
+    overflow: hidden;
+    margin: 30px auto;
+}
+
+#imgLogo img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+#grpSearch {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#grpSearch #recherche {
+    width: 40%;
+    padding: 8px;
+    border-radius: 999px;
+    box-shadow: 5px 5px 5px #644F3C;
+    border: 2px solid #644F3C;
+    margin-right: 10px;
+    outline: none;
+}
+
+#btnsearch {
+    border: none;
+    /*Supprime la bordure du bouton */
+    background: none;
+    /*Supprime l'arrière-plan du bouton*/
+    cursor: pointer;
+    /* Change le curseur au survol pour indiquer que c'est un bouton cliquable */
+    /* Optionnel : Ajuste la taille du bouton en fonction de l'image */
+    width: 50px;
+    /* Largeur souhaitée */
+    height: 50px;
+    /*Hauteur souhaitée */
+}
+
+#btnsearch:hover {
+    transition-duration: 1s;
+    transform: rotate(180deg);
+}
+
+#btnsearch img {
+    width: 100%;
+    /* Remplit le bouton avec l'image */
+    height: 100%;
+    /* Ajuste la hauteur de l'image */
+    object-fit: cover;
+    /* Ajuste la taille de l'image pour remplir le bouton */
+}
+
+ul {
+    visibility: hidden;
+    background-color: whitesmoke;
+    /* margin: 20px; */
+    padding: 30px;
+    width: 45%;
+    list-style-type: none;
+    border-radius: 30px;
+    box-shadow: 5px 5px 5px #644F3C;
+}
+
+li {
+    padding: 20px;
+    margin-left: -10px;
+
+}
+
+.headers {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 2px;
+    font-family: 'Amarante', serif;
+    font-size: 17px;
+
+}
+
+h4 {
+    font-style: italic;
+}
+
+.carte {
+    border-radius: 10px;
+    border-bottom: 2px solid #644F3C;
+}
+
+.carte:hover {
+    box-shadow: 5px 5px 5px #644F3C;
+}
+
+.pochette {
+    visibility: hidden;
+    background-color: whitesmoke;
+    width: 45%;
+    height: 40%;
+    position: sticky;
+    top: 20px;
+}
+
+.bigdiv {
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#photo {
+
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.boutonFleche {
+    background: none;  /*Supprime l'arrière-plan du bouton*/
+    border: none;  /*Supprime la bordure du bouton */
+    margin-bottom: 30px;
+    margin-right: 5px;
+    display: inline;
+    visibility: hidden;
+}
+
+.boutonFleche img {
+    cursor: pointer;
+    /* Change le curseur au survol pour indiquer que c'est un bouton cliquable */
+    /* Optionnel : Ajuste la taille du bouton en fonction de l'image */
+    width: 30px;
+    /* Largeur souhaitée */
+    height: 30px;
+    /*Hauteur souhaitée */
+}
+
+.naviguer{
+    display: flex;
+    margin-left: 48%;
+}
+
+.info{
+    background-color: black;
+    color: white;
+    bottom:0;  
+    width:100%;
+    position: fixed;
+}
+
+
+
